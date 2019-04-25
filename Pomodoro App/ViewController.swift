@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var helloWorldbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        helloWorldbutton.setTitle("Flash Light", for: .normal)
     }
-
-
+    @IBAction func flashlightButtonTapped(_ sender: Any) {
+        view.backgroundColor = .blue
+    }
+    @IBAction func greenButtonTapped(_ sender: Any) {
+        view.backgroundColor = .green
+    }
+    @IBAction func redButtonTapped(_ sender: Any) {
+        view.backgroundColor = .red
+    }
 }
-
